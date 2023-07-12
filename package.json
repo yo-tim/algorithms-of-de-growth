@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html"
+    "dev": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url https://yo-tim.github.io/algorithms-of-de-growth/",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "p5": "^1.6.0"
   }
 }
