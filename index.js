@@ -1,8 +1,5 @@
 const p5 = require("p5");
 
-let x1 = 0;
-let x2 = 0;
-
 let sketches = [];
 
 let branch_length = 150;
@@ -18,6 +15,7 @@ const sketch1 = (p) => {
     );
 
     p.frameRate(10);
+    p.noLoop();
   };
 
   p.draw = () => {
@@ -62,6 +60,7 @@ const sketch1 = (p) => {
   }
 };
 
+let x2 = 0;
 const sketch2 = (p) => {
   p.setup = () => {
     p.createCanvas(600, 600);
