@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  scroll-behavior: smooth;
+}
+nav {
+  width: 30vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+main {
+  width: 70vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color: #eeeded;
+  color: black;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-bottom: 0.5vw;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1vw;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: italic;
+}
+.top a,
+.bottom a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.top a:hover,
+.bottom a:hover {
+  text-decoration: underline;
+}
+
+.top p:first-child {
+  margin-bottom: 1vh;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.indent {
+  margin-left: 1vw;
+}
+main .alg-container:not(:first-child) {
+  border-top: 20px double black;
+  margin-top: 8vw;
+}
+
+.alg-info-container {
+  padding: 3vw;
+  box-sizing: border-box;
+}
+.alg-info-container > p {
+  width: 80%;
+}
+
+.sketch-container {
+  border-top: 1px solid black;
+}
+
+.info {
+  margin: 1vw auto;
+  padding-bottom: 1vw;
+  width: 64vw;
+  border-bottom: 1px solid black;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons a img {
+  width: 1.5vw;
+  margin-left: 0.3vw;
+}
+.sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh auto;
+
+  width: 80vh;
+  height: 80vh;
+}
+#defaultCanvas0 {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+}
+
+/* About */
+/* The side navigation menu */
+.aboutContainer {
+  height: 100%; /* 100% Full-height */
+  width: 70vw; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: -70vw;
+  background-color: #000; /* Black*/
+  color: white;
+  border-left: 2px solid white;
+  box-sizing: border-box;
+
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  transition: 0.8s ease; /* 0.5 second transition effect to slide in the sidenav */
+}
+.aboutContent {
+  padding: 3vw;
+}
+
+/* The navigation menu links */
+.aboutContainer a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.aboutContainer a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.aboutContainer .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.aboutimage {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+.closecontainer {
+  background-color: white;
+  color: black;
+
+  width: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw;
+}
+.closeicon {
+  width: 50%;
+}
+.closetext {
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 2vw 0vw;
+}
+
+/* #sketch1Container {
+  width: 80vh;
+  height: 80vh;
+} */

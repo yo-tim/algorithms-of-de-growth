@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <!-- <script src="./assets/lib/p5.sound.min.js"></script> -->
+  </head>
+
+  <body>
+    <nav>
+      <div class="top">
+        <p>Algorithms of Degrowth</p>
+        <p>Sketches</p>
+        <a class="indent" href="#phyllotaxis">Phyllotaxis</a>
+        <a class="indent" href="#lsystem">L-Systems</a>
+        <a class="indent" href="#lsystem">Cellular Automata</a>
+        <a class="indent" href="#lsystem">Boids</a>
+      </div>
+      <div class="bottom">
+        <a onclick="openAbout()">About</a>
+      </div>
+    </nav>
+    <div class="aboutContainer" id="about">
+      <div class="closecontainer" onclick="closeAbout()">
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+        <p class="closetext">Close</p>
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+        <img
+          class="closeicon"
+          src="./assets/icons/arrov.svg"
+          alt="close arrow"
+        />
+      </div>
+      <div class="aboutContent">
+        <img
+          class="aboutimage"
+          src="./assets/images/header.jpg"
+          alt="Algorithms of degrowth Header"
+        />
+        <h1>Algorithms of deGrowth</h1>
+        <p>
+          In 1972 the famous report "The Limit of Growth" was published. The
+          report was based on a simulation of the earth as an interconnected
+          system of feedback loops. The conclusions outlined in that report,
+          predicted that the World was heading for disaster. <br /><br />
+          Almost 50 years later, computer simulations are still used to
+          understand and predict the world in which we live, but despite the
+          enormous availability of computational power, this world is far away
+          to be understood and condensed into a numerical model.
+          <br /><br />
+          In this course we will encounter several algorithms that simulate a
+          process of growth. How are data fed into the algorithm? How does the
+          initial state of the simulation affect the final result? In which
+          terms can this process be experienced and communicated? How are the
+          boundaries of the simulation defined?
+        </p>
+      </div>
+    </div>
+    <main>
+      <section class="alg-container" id="phyllotaxis">
+        <div class="alg-info-container">
+          <h1>Phyllotaxis</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+
+        <!-- NEW SKETCH CONTAINER -->
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <button id="playButton1">
+                <img src="assets/icons/run.svg" />
+              </button>
+              <button id="pauseButton1">
+                <img src="assets/icons/stop.svg" />
+              </button>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch" id="sketch1Container">
+            <!-- <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" /> -->
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <!-- NEW SKETCH CONTAINER -->
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <button id="playButton2">
+                <img src="assets/icons/run.svg" />
+              </button>
+              <button id="pauseButton2">
+                <img src="assets/icons/stop.svg" />
+              </button>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch" id="sketch2Container">
+            <!-- <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" /> -->
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <!-- NEW SKETCH CONTAINER -->
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="assets/icons/run.svg" /></a>
+              <a href="#"><img src="assets/icons/stop.svg" /></a>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <!-- NEW SKETCH CONTAINER -->
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="assets/icons/run.svg" /></a>
+              <a href="#"><img src="assets/icons/stop.svg" /></a>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="alg-container" id="lsystem">
+        <div class="alg-info-container">
+          <h1>L-Systems</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+
+        <!-- NEW SKETCH CONTAINER -->
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="assets/icons/run.svg" /></a>
+              <a href="#"><img src="assets/icons/stop.svg" /></a>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="assets/icons/run.svg" /></a>
+              <a href="#"><img src="assets/icons/stop.svg" /></a>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="assets/icons/run.svg" /></a>
+              <a href="#"><img src="assets/icons/stop.svg" /></a>
+              <a href="#"><img src="assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+
+        <div class="sketch-container">
+          <div class="info">
+            <div class="title">
+              <h3>Sketch Titel</h3>
+              <h4>Autor*in</h4>
+            </div>
+            <div class="buttons">
+              <a href="#"><img src="./assets/icons/run.svg" /></a>
+              <a href="#"><img src="./assets/icons/stop.svg" /></a>
+              <a href="#"><img src="./assets/icons/link.svg" /></a>
+            </div>
+          </div>
+          <div class="sketch">
+            <img src="assets/test/langtons_ant.jpg" alt="Langtons Ant" />
+            <!-- <script src="./sketches/ta_langtons_ant_1.js"></script> -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openAbout() {
+      document.getElementById("about").style.right = "0vw";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeAbout() {
+      document.getElementById("about").style.right = "-70vw";
+    }
+
+    // Add an event listener listening for scroll
+    const main = document.querySelector("main");
+    main.addEventListener("scroll", navHighlighter);
+
+    // Get all sections that have an ID defined
+    const sections = main.querySelectorAll("div[id]");
+    // console.log(sections);
+
+    function navHighlighter() {
+      // Get current scroll position
+      //   let scrollY = window.pageYOffset;
+      let scrollY = main.scrollTop;
+
+      // Now we loop through sections to get height, top and ID values for each
+      sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        var sectionId = current.getAttribute("id");
+        // console.log(sectionId);
+        console.log(scrollY);
+
+        /*
+    - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+    - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+    */
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document
+            .querySelector(".top a[href*=" + sectionId + "]")
+            .classList.add("active");
+          console.log("added");
+          console.log(sectionHeight);
+        } else {
+          document
+            .querySelector(".top a[href*=" + sectionId + "]")
+            .classList.remove("active");
+          console.log("taken");
+        }
+      });
+    }
+  </script>
+  <script src="./index.js"></script>
+</html>
